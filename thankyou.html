@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="thankyou1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Fjalla+One|Cantarell:400,400italic,700italic,700" rel="stylesheet" type="text/css" />
+	<title>Thank you!</title>
+</head>
+
+<body>
+	<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+
+	<div class="redbar"></div>
+	<div class="menu">
+		<div class="menucontent">
+			<a href="thankyou.html">Home</a>
+			<a href="#thanks">Dear BofA</a>
+	    <a href="memories.html">Memories</a>
+	    <a href="notes.html">Notes</a>
+	    <a href="projects.html">Projects</a>
+		</div>
+	</div>
+	</div>
+
+<body>
+	<div class="introimg"><img src="images/main.jpg"></div>
+	<div class="intro">
+		<center>
+			<h1>Thank You</h1><br>
+			<h2><mark>From Girls Who Code Bank of America NYC 2018</mark></h2>
+			<a href="#thanks"><button><img src="button.svg" style="height:40px; width:40px;"></button></a>
+		</center>
+	</div>
+
+
+	<div class="MainCentered">
+		<section id="thanks">
+		<h1> Dear Bank of America,</h1>
+		<h3>Thank you for this summer of 2018! We really enjoyed our time here, and we're sad to leave. You've taught us a lot in these past 7 weeks, and we hope that this website will be a reminder of the fun we had!</h3>
+		</section>
+	</div>
+
+	<br>
+
+	<div class="footer"><center>
+		<img src="images/banklogo.png">
+		<img src="images/gwc.png">
+	</center></div>
+</body>
