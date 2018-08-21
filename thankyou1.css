@@ -304,6 +304,13 @@ mark{
 	margin-left: 50px;
 	width:35%;
 }
+
+.leftNote p{
+	font-family: 'Cantarell', sans-serif;
+	font-size: 30px;
+	color:#4F4E4E;
+}
+
 .rightNote{
 	float:right;
 	margin-right:25%;
